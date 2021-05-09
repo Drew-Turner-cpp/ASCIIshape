@@ -38,6 +38,8 @@ void drawRect(int x, int y, bool fillQ)
     // Conditional block for bool argument
     if (fillQ)
     {
+        cout << Xline << endl;  // Prints first line
+        
         for (int iter = 0; iter <= y; iter = iter + 1)
         {
             int inbetween = x - 2;
@@ -45,7 +47,7 @@ void drawRect(int x, int y, bool fillQ)
             cout << Yline << endl;
             Yline = "";
 
-            if(iter == y - 1)  // again "- 1" because it was appending one to many lines 
+            if(iter == y - 2)  // "- 2" because of the added line in the beginning of the statement
             {
                 cout << Xline << endl;
                 break;
